@@ -1,42 +1,41 @@
 .all-countries {
-    display: -ms-grid;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 5px;
-    border: 5px solid #fff;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 5px;
+  border: 5px solid #fff;
 }
 
 .country-card {
-    background-color: #35548b;
-    color: #fff;
+  background-color: #35548b;
+  color: #fff;
 }
 
-.country-card:nth-child(2n){
-    background-color: #5485e1;
-   }
-
+.country-card:nth-child(2n) {
+  background-color: #5485e1;
+}
 
 .icons {
-    display: flex;
-    align-items: flex-start;
-    gap: 160px;
-    margin: 5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 160px;
+  margin: 5px;
 }
 
 .virsus-icon {
-    width: 70px;
-    height: 60px;
+  width: 70px;
+  height: 60px;
 }
 
 .arrow {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .Cname {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 7px;
 }
