@@ -15,7 +15,8 @@ export const displayCountries = () => async (dispatch) => {
   const countriesArr = await fetchData();
 
   const CountriesTemp = countriesArr.map((ele) => ({
-    // id: ele.countryInfo._id,
+    // eslint-disable-next-line no-underscore-dangle
+    id: ele.countryInfo._id,
     country: ele.country,
     cases: ele.cases,
     image: ele.countryInfo.flag,
