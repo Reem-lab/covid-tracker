@@ -2,7 +2,7 @@
 import { BsArrowRightCircle } from 'react-icons/bs';
 import { FaVirus } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { displayInformations } from '../redux/actions/AllInfo';
 import '../styles/Details.css';
@@ -21,7 +21,9 @@ const Details = () => {
 
   return (
     <div className="dRegions">
-      { filtered.map((info) => (
+      { !filtered.length ? (
+        <div className="heading">No Counrties Information and Details Found ❗❕</div>
+      ) : (filtered.map((info) => (
         <div key={info.country}>
           <div className="header">
             <FaVirus className="virsus-icon" />
@@ -38,54 +40,54 @@ const Details = () => {
               <p>Today cases in the country</p>
               <div className="cases-number">
                 <span>{info.todayCases}</span>
-                <BsArrowRightCircle className="arrow" />
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
               </div>
             </div>
             <div className="info">
               <p>General deaths</p>
               <div className="cases-number">
                 <span>{info.deaths}</span>
-                <BsArrowRightCircle className="arrow" />
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
               </div>
             </div>
             <div className="info">
               <p>Total Recovered</p>
               <div className="cases-number">
                 <span>{info.recovered}</span>
-                <BsArrowRightCircle className="arrow" />
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
               </div>
             </div>
             <div className="info">
               <p>Continent name</p>
               <div className="cases-number">
                 <span>{info.continent}</span>
-                <BsArrowRightCircle className="arrow" />
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
               </div>
             </div>
             <div className="info">
               <p>Total tests that made</p>
               <div className="cases-number">
                 <span>{info.tests}</span>
-                <BsArrowRightCircle className="arrow" />
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
               </div>
             </div>
             <div className="info">
               <p>Today deaths</p>
               <div className="cases-number">
                 <span>{info.todayDeaths}</span>
-                <BsArrowRightCircle className="arrow" />
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
               </div>
             </div>
             <div className="info">
               <p>Today Recovered</p>
               <div className="cases-number">
                 <span>{info.todayRecovered}</span>
-                <BsArrowRightCircle className="arrow" />
+                <Link to="/"><BsArrowRightCircle className="arrow" /></Link>
               </div>
             </div>
           </div>
         </div>
-      ))}
+      )))}
     </div>
   );
 };
