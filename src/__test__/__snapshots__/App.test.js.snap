@@ -10,25 +10,30 @@ exports[`App Renders Correctly 1`] = `
     <div
       className="left-nav"
     >
-      <svg
-        className="icon-white iconA"
-        fill="currentColor"
-        height="1em"
-        stroke="currentColor"
-        strokeWidth="0"
-        style={
-          Object {
-            "color": undefined,
-          }
-        }
-        viewBox="0 0 512 512"
-        width="1em"
-        xmlns="http://www.w3.org/2000/svg"
+      <a
+        href="/"
+        onClick={[Function]}
       >
-        <path
-          d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"
-        />
-      </svg>
+        <svg
+          className="icon-white iconA"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+            }
+          }
+          viewBox="0 0 512 512"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"
+          />
+        </svg>
+      </a>
       <p
         className="middle-nav date"
       >
@@ -114,50 +119,40 @@ exports[`App Renders Correctly 1`] = `
           </h1>
         </div>
       </div>
-      <div
-        className="search"
+    </div>
+    <div
+      className="search"
+    >
+      <h2
+        className="h2Search"
       >
-        <h2
-          className="h2Search"
-        >
-          Search by Country
-          <svg
-            className="search-icon"
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            strokeWidth="0"
-            style={
-              Object {
-                "color": undefined,
-              }
+        Search by Country
+        <svg
+          className="search-icon"
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
             }
-            viewBox="0 0 24 24"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z"
-            />
-          </svg>
-        </h2>
-        <form
-          className="inputs"
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <input
-            className="input-search"
-            onChange={[Function]}
-            placeholder="Search"
-            value=""
+          <path
+            d="M15.25 0a8.25 8.25 0 0 0-6.18 13.72L1 22.88l1.12 1 8.05-9.12A8.251 8.251 0 1 0 15.25.01V0zm0 15a6.75 6.75 0 1 1 0-13.5 6.75 6.75 0 0 1 0 13.5z"
           />
-          <button
-            className="btn"
-            type="button"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
+        </svg>
+      </h2>
+      <input
+        className="input-search"
+        onChange={[Function]}
+        placeholder="Search"
+        value=""
+      />
     </div>
     <div
       className="all-countries"

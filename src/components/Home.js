@@ -1,14 +1,19 @@
 import { NavLink } from 'react-router-dom';
 import { RiVirusLine } from 'react-icons/ri';
 import { BsArrowRightCircle } from 'react-icons/bs';
-import { useEffect } from 'react';
+import { VscSearch } from 'react-icons/vsc';
+import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import SearchBar from './SearchBar';
 import { displayCountries } from '../redux/actions/AllCountries';
 import '../styles/Home.css';
 
 const Home = () => {
+  const [location, setLocation] = useState('');
   const countries = useSelector((state) => state.CountriesReducer);
+  const filtered = countries.filter((item) => item.country.toLowerCase()
+    .includes(location.toLowerCase()));
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -20,11 +25,23 @@ const Home = () => {
   return (
     <div className="country-section">
       <SearchBar />
+      <div className="search">
+        <h2 className="h2Search">
+          Search by Country
+          <VscSearch className="search-icon" />
+        </h2>
+        <input
+          className="input-search"
+          placeholder="Search"
+          value={location}
+          onChange={(e) => { setLocation(e.target.value); }}
+        />
+      </div>
       <div className="all-countries">
-        { !countries.length ? (
+        { !filtered.length ? (
           <div className="heading">No Counrties Information Found ❗❕</div>
         ) : (
-          countries.map((country1) => (
+          filtered.map((country1) => (
             <div key={country1.country} className="country-card">
               <NavLink to={`/Details/${country1.country}`}>
                 <div className="icons">
