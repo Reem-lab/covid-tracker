@@ -4,6 +4,6 @@ exports[`Test the Countries list renders correctly 1`] = `
 <div
   class="heading"
 >
-  No Counties Information Found ❗❕
+  No Counrties Information Found ❗❕
 </div>
 `;
