@@ -8,7 +8,10 @@
 > This is My react capstone project, This project is talking about covid cases in all countries in the world and also displays all the information details to each country with all covid cases or recovered cases.
 
 
-<!-- ## Video Demo 📽 -->
+## Video Demo 📽
+
+https://user-images.githubusercontent.com/58553711/157734548-45e097f2-d841-4a84-8d98-c00a3094a6c2.mp4
+
 
 
 ## Deploy Demo 🚀
