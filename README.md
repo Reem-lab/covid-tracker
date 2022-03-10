@@ -15,7 +15,9 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cc500adb-5279-4240-9ff1-26be38ac6130/deploy-status)](https://eager-spence-c2018c.netlify.app/)
 
-## Video Description by me 
+## Video Description by me
+
+[see my video from here](https://www.loom.com/share/abd3e97140784135bbc8ddbf2906bb86)
 
 
 
