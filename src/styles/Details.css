@@ -1,0 +1,50 @@
+
+.info {
+  display: flex;
+  background-color: #35548b;
+  color: #fff;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 15px;
+  font-size: 20px;
+  height: 80px;
+}
+
+.info:nth-child(2n) {
+  background-color: #5485e1;
+}
+
+.cases-number {
+  display: flex;
+  gap: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #5485e1;
+  padding: 15px;
+  color: #fff;
+  height: 110px;
+}
+
+.arrow {
+  cursor: pointer;
+  color: #fff;
+}
+
+.naCases {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cases-number {
+    gap: 4px;
+  }
+
+  .info {
+    font-size: 18px;
+  }
+}

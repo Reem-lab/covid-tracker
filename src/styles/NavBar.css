@@ -1,0 +1,49 @@
+.nav-bar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #4369b2;
+  align-items: baseline;
+}
+
+.right-nav,
+.left-nav {
+  width: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+  align-items: baseline;
+}
+
+.middle-nav {
+  font-size: 23px;
+  color: #fff;
+}
+
+.iconA,
+.iconS,
+.iconM {
+  color: #fff;
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .iconA,
+  .iconS,
+  .iconM {
+    width: 15px;
+    height: 20px;
+  }
+
+  .middle-nav {
+    font-size: 20px;
+  }
+
+  .left-nav,
+  .right-nav {
+    align-items: flex-start;
+    width: 60px;
+  }
+}
