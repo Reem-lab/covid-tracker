@@ -23,12 +23,11 @@ const SearchBar = () => {
       <div className="first-section">
         <img className="img-map" src={img} alt="map-world" />
         <div className="info">
-          <h1>All new Confrimed Cases</h1>
-          <span>new cases</span>
+          <h1 className="confimred-cases">All new Confrimed Cases</h1>
         </div>
       </div>
       <div className="search">
-        <h2>
+        <h2 className="h2Search">
           Search by Country
           <VscSearch className="search-icon" />
         </h2>

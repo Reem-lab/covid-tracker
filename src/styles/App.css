@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: inherit;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+*,
+body,
+body * {
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 350px;
+    height: auto;
+  }
+}

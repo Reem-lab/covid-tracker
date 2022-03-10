@@ -55,3 +55,29 @@ h2 {
   border-radius: 9px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .img-map {
+    width: 250px;
+    height: auto;
+  }
+
+  .confimred-cases {
+    font-size: 15px;
+  }
+
+  .input-search {
+    width: 250px;
+    height: 30px;
+  }
+
+  .h2Search {
+    font-size: 22px;
+  }
+}
