@@ -13,7 +13,7 @@
 
 ## Deploy Demo 🚀
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cc500adb-5279-4240-9ff1-26be38ac6130/deploy-status)](https://eager-spence-c2018c.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cc500adb-5279-4240-9ff1-26be38ac6130/deploy-status)](https://covid19-tracker9.netlify.app/)
 
 ## Video Description by me
 
