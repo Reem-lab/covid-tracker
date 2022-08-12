@@ -5,7 +5,7 @@
 
 # Covid19-Tracker 🦠
 
-> This is My react capstone project, This project is talking about covid cases in all countries in the world and also displays all the information details to each country with all covid cases or recovered cases.
+> This is my react capstone project. The project is talking about covid cases in all countries in the world and also displays all the information details to each country with all covid cases or recovered cases.
 
 
 ## Video Demo 📽
